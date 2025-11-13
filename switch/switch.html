@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let testScore = Number(prompt("enter your score.."));
+        let letterGrade;
+
+
+        switch(true){
+            case testScore >= 90:
+                letterGrade = "A";
+                break;
+            case testScore >= 80:
+                letterGrade = "B";
+                break;
+            case testScore >= 70:
+                letterGrade = "C";
+                break;
+            case testScore >= 60:
+                letterGrade = "D";
+                break;
+            default:
+                letterGrade = "Fail"
+        }
+
+        document.write("your grade is "+letterGrade);
+    </script>
+</body>
+</html>
